@@ -1,0 +1,117 @@
+@media only screen and (min-width: 1000px) {
+    main {
+        margin: auto;
+        max-width: 100%;
+        background-color: white;
+    }
+
+    .website-info {
+        text-align: center;
+    }
+
+    .website-info #logo-icon {
+        margin-bottom: -5em;
+    }
+
+    header {
+        max-width: 100%;
+        background-color: lightblue;
+        padding-bottom: 20px;
+        padding-top: 5px;
+    }
+
+    header img {
+        width: 50px;
+        padding-left: 0em;
+    }
+
+    nav {
+        padding-top: 0.1em;
+    }
+
+    a {
+        background-color: skyblue;
+        margin-top: -1.5em;
+
+    }
+
+    a:hover {
+        background-color: slateblue;
+        color: skyblue;
+    }
+
+    .active {
+        background-color: slateblue;
+        color: skyblue;
+    }
+
+
+    .menu li:first-child {
+        display: none;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        background-color: lightblue;
+    }
+
+    .menu li {
+        display: block;
+        list-style: none;
+        font-size: 0.7em;
+        background-color: lightblue;
+
+    }
+
+    .town-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: lightblue;
+    }
+
+    .sun-icon {
+        max-width: 100%;
+        height: 20px;
+    }
+
+
+    #logo {
+        background-color: lightblue;
+    }
+
+    #logo-icon {
+        text-align: center;
+    }
+
+    #city {
+        text-align: center;
+        margin-top: -0.5em;
+    }
+
+    #contact-info {
+        grid-column: 2/3;
+    }
+
+    #site-contact-info {
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: lightblue;
+    }
+
+    #end-image {
+        padding: 1em;
+        margin-left: 2em;
+        grid-column: 1/2;
+        max-width: 100%;
+        height: 10em;
+    }
+
+    footer p {
+        width: 100%;
+        background-color: lightblue;
+        font-size: 1em;
+        text-align: center;
+    }
+}

@@ -1,0 +1,113 @@
+@media only screen and (min-width: 800px) {
+    main {
+        margin: auto;
+        max-width: 800px;
+        background-color: white;
+    }
+
+    .website-info {
+        text-align: center;
+    }
+
+    header {
+        width: 100%;
+        background-color: lightblue;
+        padding-bottom: 20px;
+        padding-top: 5px;
+    }
+
+    #logo-icon {
+        background-color: lightblue;
+        text-align: center;
+        width: 2em;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #grid-for-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    input {
+        margin-bottom: 1em;
+    }
+
+    a {
+        background-color: lightblue;
+        text-decoration: none;
+        margin-top: -1.5em;
+    }
+
+    a:hover {
+        background-color: slateblue;
+        color: skyblue;
+    }
+
+    #top-section {
+        position: relative;
+    }
+
+    .active {
+        background-color: slateblue;
+        color: skyblue;
+    }
+
+    .menu li:first-child {
+        display: none;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color: lightblue;
+    }
+
+    .menu li {
+        display: block;
+        list-style: none;
+        font-size: 0.7em;
+        background-color: lightblue;
+    }
+
+    .sun-icon {
+        max-width: 100%;
+        height: 20px;
+    }
+
+    #city {
+        text-align: center;
+        margin-top: -0.5em;
+    }
+
+    #contact-info {
+        grid-column: 2/3;
+    }
+
+    #storm-coming-label {
+        margin: 30px;
+    }
+
+    #site-info {
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: lightblue;
+    }
+
+    #end-image {
+        padding: 1em;
+        margin-left: 2em;
+        grid-column: 1/2;
+        max-width: 100%;
+        height: 10em;
+    }
+
+    footer p {
+        width: 100%;
+        background-color: lightblue;
+        font-size: 1em;
+        text-align: center;
+    }
+}

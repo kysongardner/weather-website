@@ -1,0 +1,17 @@
+@media only screen and (min-width: 600px) {
+    body {
+        max-width: 750px;
+        margin: auto;
+    }
+
+    #pictures-for-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    img {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}

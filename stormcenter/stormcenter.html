@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/large.css">
+    <script src='/lesson-11/index/js/main.js'></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <section class="website-info">
+                <img id="logo-icon" src="images/day-sunny.png">
+                <h1>Kyson's Weather Site</h1>
+                <div id="motto">Get your weather information here!</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" onclick="changeMenu()">Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a class="active" href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <div id="grid-for-form">
+
+            <label>Full Name:</label>
+            <input type="text" required minlength="5" pattern="[A-Za-z]">
+
+            <label>Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="MyEmail@gmail.com">
+
+            <label>Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone-number" required>
+            <div id="left-center">
+                <label id='to-align'>Zip Code:</label>
+            </div>
+            <input type="number" id="zip-code" name="zip-code" required>
+
+            <label>Storm Date:</label>
+            <input type="date" id="storm-date" name="storm-date">
+
+            <label for="storm-choices">Storm Type:</label>
+            <input list="storm-choices">
+
+            <datalist id="storm-choices">
+                <option value="Flash Flood">Flash Flood</option>
+                <option value="Hail">Hail</option>
+                <option value="Hurricane">Hurricane</option>
+                <option value="Thunderstorm">Thunderstorm</option>
+                <option value="Tornado">Tornado</option>
+            </datalist>
+
+            <label for="s-severity">Storm Severity:</label>
+            <input type="range" id="s-severity" name="s-severity" min="1" max="10">
+
+            <label for="s-region">Storm Region:</label>
+            <select name="s-region" id="s-region">
+                <option value="Select Region" disabled>Select Region</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+            </select>
+
+            <div id="storm-coming-label">
+                <label>Is the storm coming your way?</label>
+            </div>
+            <input type="radio" id="yes" name="user-in-danger">
+            <label for="user-in-danger">Yes</label><br>
+
+            <input type="radio" id="maybe" name="user-in-danger">
+            <label for="user-in-danger">Maybe</label><br>
+
+            <input type="radio" id="no" name="user-in-danger">
+            <label for="user-in-danger">No</label><br>
+            <label>
+                <textarea>Add any additional information here</textarea>
+            </label>
+            <label>
+                <input id="submit-button" type="submit" name="submit-button" onclick="location.href='thanks.html'"
+                    value="Share Information">
+            </label>
+
+        </div>
+        <div id="site-info">
+            <img id="end-image" src="images/pexels-felix-mittermeier-1039131.jpg">
+            <span id="contact-info">
+                <h4>Weather Site</h4>
+                <p>Address goes here</p>
+                <p>&#9743; 777-777-7777</p>
+                <p>&#9993; kysongardner1@gmail.com</p>
+                <p>&#9728; &#9728; &#9728; &#9728;</p>
+            </span>
+        </div>
+        <footer>
+            <p>&copy; The Weather Site | Attributions | Kyson Gardner | 2020</p>
+        </footer>
+    </main>
+</body>
+
+</html>

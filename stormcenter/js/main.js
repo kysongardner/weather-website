@@ -1,0 +1,1 @@
+// load thanks page
